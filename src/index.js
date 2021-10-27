@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Card from './components/Card';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <div className="d-flex justify-content-start cards">
+      <Card
+        imgsrc="https://cdn.statically.io/img/www.ageratingjuju.com/f=auto%2Cq=60/wp-content/uploads/2021/10/Money-Heist.jpg"
+        title="Money Heist"
+        linkUrl="https://www.netflix.com/in/title/80192098"
+        description="
+    The Netflix series Money Heist (La casa de Papel) is a Spanish heist crime drama television series created by Álex Pina for Netflix. It is rated TV-MA for Violence, Sex, Nudity,
+    Substances, Sexual Violence."
+      />
+      <Card
+        imgsrc="https://cdn.statically.io/img/www.ageratingjuju.com/f=auto%2Cq=60/wp-content/uploads/2021/10/Squid-Game.jpg"
+        title="Squid Game"
+        linkUrl="https://www.netflix.com/in/title/80192098"
+        description="
+    The Netflix series Money Heist (La casa de Papel) is a Spanish heist crime drama television series created by Álex Pina for Netflix. It is rated TV-MA for Violence, Sex, Nudity,
+    Substances, Sexual Violence."
+      />
+      <Card
+        imgsrc="https://cdn.statically.io/img/www.ageratingjuju.com/f=auto%2Cq=60/wp-content/uploads/2021/10/Breaking-Bad.jpg"
+        title="Breaking Bad"
+        linkUrl="https://www.netflix.com/in/title/80192098"
+        description="
+    The Netflix series Money Heist (La casa de Papel) is a Spanish heist crime drama television series created by Álex Pina for Netflix. It is rated TV-MA for Violence, Sex, Nudity,
+    Substances, Sexual Violence."
+      />
+    </div>
+  </>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
